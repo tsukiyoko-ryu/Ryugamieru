@@ -79,8 +79,10 @@ body {
 .divider { width:1px; height:60px; background:linear-gradient(to bottom,transparent,#C9A96E,transparent); margin:0 auto 40px; }
 .ornament { text-align:center; color:#C9A96E; letter-spacing:0.5em; margin:32px 0; opacity:0.6; }
 section { padding:72px 24px; max-width:720px; margin:0 auto; }
-.section-label { font-family:'Cinzel Decorative',serif; font-size:0.6rem; letter-spacing:0.5em; color:#C9A96E; text-align:center; margin-bottom:12px; }
-.section-title { font-family:'Shippori Mincho',serif; font-size:clamp(1.4rem,4vw,2rem); font-weight:700; text-align:center; line-height:1.6; margin-bottom:40px; letter-spacing:0.08em; }
+section .section-title { color:#1a1228; }
+section .section-label { color:#8B6914; }
+.section-label { font-family:'Cinzel Decorative',serif; font-size:0.6rem; letter-spacing:0.5em; color:#8B6914; text-align:center; margin-bottom:12px; }
+.section-title { font-family:'Shippori Mincho',serif; font-size:clamp(1.4rem,4vw,2rem); font-weight:700; text-align:center; line-height:1.6; margin-bottom:40px; letter-spacing:0.08em; color:#f0e8d5; }
 .dark-bg { background:#100c1e; width:100%; padding:72px 0; }
 .dark-bg .inner { max-width:720px; margin:0 auto; padding:0 24px; }
 .pain-list { list-style:none; display:flex; flex-direction:column; gap:16px; }
@@ -93,18 +95,18 @@ section { padding:72px 24px; max-width:720px; margin:0 auto; }
   background:rgba(255,255,255,0.02);
 }
 .pain-list li::before { content:'✦'; color:#C9A96E; font-size:0.65rem; margin-top:5px; flex-shrink:0; }
-.story-text { font-size:0.95rem; line-height:2.2; color:#b8a88a; text-align:center; }
-.story-text p { margin-bottom:24px; }
-.story-text .hl { color:#C9A96E; font-weight:700; }
+.story-text { font-size:0.95rem; line-height:2.2; color:#3a2e20; text-align:center; }
+.story-text p { margin-bottom:24px; color:#3a2e20; }
+.story-text .hl { color:#8B6914; font-weight:700; }
 .quote {
-  border-left:2px solid #C9A96E;
+  border-left:2px solid #8B6914;
   padding:14px 24px;
   margin:32px auto;
   text-align:left;
   max-width:500px;
   font-style:italic;
-  color:#f0e8d5;
-  background:rgba(201,169,110,0.08);
+  color:#3a2e20;
+  background:rgba(201,169,110,0.15);
   border-radius:0 4px 4px 0;
   line-height:2;
 }
@@ -140,8 +142,8 @@ section { padding:72px 24px; max-width:720px; margin:0 auto; }
 .detail-box { border:1px solid rgba(201,169,110,0.18); border-radius:8px; padding:24px; background:rgba(255,255,255,0.02); }
 .detail-row { display:flex; gap:16px; padding:12px 0; border-bottom:1px solid rgba(201,169,110,0.1); font-size:0.88rem; line-height:1.8; }
 .detail-row:last-child { border-bottom:none; }
-.detail-label { color:#C9A96E; font-weight:700; min-width:80px; flex-shrink:0; }
-.detail-value { color:#b8a88a; }
+.detail-label { color:#8B6914; font-weight:700; min-width:80px; flex-shrink:0; }
+.detail-value { color:#3a2e20; }
 .profile-card { display:flex; flex-direction:column; align-items:center; gap:28px; text-align:center; }
 .profile-img { width:160px; height:160px; border-radius:50%; border:2px solid #C9A96E; box-shadow:0 0 40px rgba(201,169,110,0.2); object-fit:cover; object-position:center top; }
 .profile-name { font-family:'Shippori Mincho',serif; font-size:1.4rem; font-weight:700; margin-bottom:4px; }
@@ -198,8 +200,8 @@ footer { text-align:center; padding:40px 24px; border-top:1px solid rgba(201,169
     <div class="program-grid">
       <div class="program-card reveal">
         <p class="program-num">PART 01</p>
-        <h3 class="program-name">🐉 魂の土台を整える（基礎ヒーリング）</h3>
-        <p class="program-desc">脳波をシータ波に導き、宇宙の根源とつながる瞑想技法を習得。思い込み（信念）を見つけ、書き換えるテクニックを体系的に学びます。筋肉反射テスト、エネルギーブレイク、感覚・感情への働きかけなど、実践的な手法で潜在意識にアクセスする方法を身につけます。3日間のオンライン講座（Zoom）で丁寧に学びます。</p>
+        <h3 class="program-name">🐉 魂の土台を整える（基礎講座）</h3>
+        <p class="program-desc">深い瞑想状態から宇宙の根源とつながり、潜在意識にアクセスする技法を習得。自分の中にある思い込みや感情のブロックを見つけ、書き換えるための実践的なワークを丁寧に学びます。エネルギーを整え、本来の自分に戻るための土台をつくる3日間です。</p>
       </div>
       <div class="program-card reveal">
         <p class="program-num">PART 02</p>
@@ -237,7 +239,7 @@ footer { text-align:center; padding:40px 24px; border-top:1px solid rgba(201,169
       <p class="price-main">¥71,300</p>
       <p class="price-note">（税込）PayPal / 銀行振込</p>
       <ul class="price-includes">
-        <li>3日間の基礎ヒーリング講座（Zoom）</li>
+        <li>3日間の基礎講座（Zoom）</li>
         <li>潜在意識書き換えセッション × 3回</li>
         <li>感謝ワーク（自己愛を育てるワーク）</li>
         <li>テキスト・書籍を郵送</li>
@@ -260,7 +262,9 @@ footer { text-align:center; padding:40px 24px; border-top:1px solid rgba(201,169
     <div class="detail-row"><span class="detail-label">形式</span><span class="detail-value">オンライン（Zoom）</span></div>
     <div class="detail-row"><span class="detail-label">定員</span><span class="detail-value">少人数制（ペアワーク中心）</span></div>
     <div class="detail-row"><span class="detail-label">受講料</span><span class="detail-value">71,300円（税込）PayPal / 銀行振込</span></div>
-    <div class="detail-row"><span class="detail-label">備考</span><span class="detail-value">テキスト・書籍を郵送。別日に練習会あり。録画なし（リアルタイム参加のみ）</span></div>
+    <div class="detail-row"><span class="detail-label">セッション</span><span class="detail-value">事前セッション 1回（講座前）<br>アフターセッション 2回（講座後）<br>合計3回、月陽子が個別サポート</span></div>
+<div class="detail-row"><span class="detail-label">感謝ワーク</span><span class="detail-value">毎日公式LINEに提出<br>月陽子がフィードバックを返信</span></div>
+<div class="detail-row"><span class="detail-label">備考</span><span class="detail-value">テキスト・書籍を郵送。別日に練習会あり。録画なし（リアルタイム参加のみ）</span></div>
   </div>
 </section>
 
@@ -282,9 +286,9 @@ footer { text-align:center; padding:40px 24px; border-top:1px solid rgba(201,169
 <section style="text-align:center;">
   <div class="reveal">
     <h2 class="section-title">直感で「気になる」と感じたなら、<br><span class="gold">それは龍からのサインです</span></h2>
-    <p style="color:#b8a88a;font-size:0.93rem;line-height:2;margin-bottom:36px;">変われなかったのは、あなたのせいじゃない。<br>ただ、魂の扉がまだ開いていなかっただけ。</p>
+    <p style="color:#3a2e20;font-size:0.93rem;line-height:2;margin-bottom:36px;">変われなかったのは、あなたのせいじゃない。<br>ただ、魂の扉がまだ開いていなかっただけ。</p>
     <a href="https://forms.gle/tcSd67BKNfvw5pRPA" target="_blank" class="btn">龍とつながる講座に申し込む</a>
-    <p class="btn-note" style="margin-top:16px;">モニター価格 ¥71,300（税込）</p>
+    <p class="btn-note" style="margin-top:16px;color:#3a2e20;">モニター価格 ¥71,300（税込）</p>
   </div>
 </section>
 
